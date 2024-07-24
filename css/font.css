@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'JetBrainsMono';
+  font-display: swap;
+  src: url(/font/JetBrainsMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'AaZhuNiWoMingMeiXiangChunTian';
+  font-display: swap;
+  src: url(/font/AaZhuNiWoMingMeiXiangChunTian-2.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'GS-SC';
+  font-display: swap;
+  src: url(/font/GlowSansSC-Normal-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: 'GS-TC';
+  font-display: swap;
+  src: url(/font/GlowSansTC-Normal-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: 'GS-J';
+  font-display: swap;
+  src: url(/font/GlowSansJ-Normal-Regular.otf) format("truetype");
+}
