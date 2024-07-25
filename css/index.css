@@ -2089,6 +2089,20 @@ span.tags-punctuation::before {
   font-size: 14px;
   line-height: 32px;
 }
+#global_bg {
+  position: fixed;
+  z-index: 999;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://sources.minerno.com//img/background-write.webp");
+  background-size: cover;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+[data-theme=dark] #global_bg {
+  background-image: url("https://sources.minerno.com//img/background-black.webp");
+}
 #article-container {
   overflow-wrap: break-word;
 }
@@ -7521,7 +7535,7 @@ div#banners .bannerText {
   }
 }
 [data-theme=dark] {
-  --efu-theme: #ffc848;
+  --efu-theme: #de3163;
   --efu-theme-op: rgba(242,185,75,0.137);
   --efu-theme-op-deep: rgba(242,185,75,0.867);
   --efu-theme-none: '#f2b94b00';
