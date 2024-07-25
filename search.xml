@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Markdown语法与外挂标签</title>
+    <url>/2024/07/25/Markdown%E8%AF%AD%E6%B3%95%E4%B8%8E%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<h1 id="Python-概述"><a href="#Python-概述" class="headerlink" title="Python 概述"></a>Python 概述</h1><h2 id="Python的发展与应用领域"><a href="#Python的发展与应用领域" class="headerlink" title="Python的发展与应用领域"></a>Python的发展与应用领域</h2><ul>
+<li>大数据</li>
+<li>大模型</li>
+<li>人工智能</li>
+</ul>
+<h2 id="主流开发环境的特点及安装"><a href="#主流开发环境的特点及安装" class="headerlink" title="主流开发环境的特点及安装"></a>主流开发环境的特点及安装</h2><ul>
+<li>官网：<a href="https://www.python.org/">https://www.python.org/</a><ul>
+<li>option –&gt; Configure IDLE</li>
+<li>IDLE –&gt; new(进入代码编辑窗口) –&gt; save –&gt; run</li>
+<li>缺点：两个窗口，切换不方便，调试也不方便</li>
+</ul>
+</li>
+<li>Thonny: <a href="https://thonny.org/">https://thonny.org/</a><ul>
+<li>Standard (not Raspberry PI)</li>
+<li>命令与代码为一体</li>
+</ul>
+</li>
+<li>PyCharm: <a href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a><ul>
+<li>一般用于商业开发，环境比较复杂（功能比较齐全）</li>
+<li>Community(free)</li>
+<li>Professional</li>
+</ul>
+</li>
+<li>Thonny 树莓派典型嵌入的最主流开发工具(创新学分)</li>
+</ul>
+<h2 id="Python程序的特点与风格-Thonny"><a href="#Python程序的特点与风格-Thonny" class="headerlink" title="Python程序的特点与风格(Thonny)"></a>Python程序的特点与风格(Thonny)</h2><ul>
+<li>交互环境中的简单编程</li>
+<li>大小写敏感</li>
+<li>变量直接赋值使用(初始化)，无需指定类型</li>
+<li>indentation：严格缩进，否则就是错误，根据缩进作为代码逻辑</li>
+<li>扩展名：py, pyw(窗体)</li>
+</ul>
+<h2 id="程序示例"><a href="#程序示例" class="headerlink" title="程序示例"></a>程序示例</h2><ul>
+<li><p>注释 # 开头，作为说明或者暂时屏蔽代码</p>
+</li>
+<li><p>简单顺序程序（输入与输出）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">mysum</span>(<span class="params">x,y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">x = <span class="number">2</span> <span class="comment">#这是注释</span></span><br><span class="line"><span class="built_in">print</span>(x + mysum(<span class="number">3</span>,<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>map 函数的应用示例</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">input</span>(<span class="string">&#x27;Please input:\n&#x27;</span>)</span><br><span class="line">n1, n2 = <span class="built_in">map</span>(<span class="built_in">int</span>, x.split()) <span class="comment"># 以空格为分隔符进行切割</span></span><br><span class="line"><span class="built_in">print</span>(n1 + n2)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="开发环境强化，断点，调试"><a href="#开发环境强化，断点，调试" class="headerlink" title="开发环境强化，断点，调试"></a>开发环境强化，断点，调试</h2><ul>
+<li>视图 （View）–&gt; Shell （交互命令行窗口）</li>
+<li>大纲(outlines)：查看函数</li>
+<li>变量：查看值</li>
+<li>行号前双敲两下，设置断点，运行，查看变量的值<ul>
+<li>运行 –&gt; 调试当前脚本(Ctrl + F5)</li>
+</ul>
+</li>
+</ul>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><ul>
+<li>专业见习、毕业实习、毕业设计，编程思维等等</li>
+</ul>
+<h2 id="作业要求"><a href="#作业要求" class="headerlink" title="作业要求"></a>作业要求</h2><ul>
+<li>标准：全学号_ 姓名_n</li>
+<li>按班为单位，备注未提交学生的学号和姓名</li>
+<li>包内无包</li>
+<li>3月9日晚上提交</li>
+</ul>
+]]></content>
+      <categories>
+        <category>演示</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我想玩Apex</title>
     <url>/2024/07/24/hello-world/</url>
     <content><![CDATA[<p>这是什么？<a href="https://www.ea.com/games/apex-legends">Apex</a>!</p>
