@@ -6174,17 +6174,17 @@ span.tagsPageCount {
     border: none;
   }
 }
-i.bi,
+i.bber-logo,
 i.bber-gotobb {
   transition: 0.3s;
   cursor: pointer;
 }
-i.bi:hover,
+i.bber-logo:hover,
 i.bber-gotobb:hover {
   opacity: 0.8;
   color: var(--efu-theme);
 }
-i.bi {
+i.bber-logo {
   font-size: 2rem;
   margin-right: 1rem;
 }
@@ -6462,7 +6462,7 @@ i.bber-gotobb {
   cursor: pointer;
   white-space: nowrap;
 }
-#bber-talk .li-style .bi-app-indicator {
+#bber-talk .li-style .solitude {
   font-size: 1rem;
   margin-left: 0.5rem;
 }
