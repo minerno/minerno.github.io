@@ -3395,7 +3395,8 @@ span.tags-punctuation::before {
   margin: 0 30px;
   transform: translateY(20px);
   transition: 0.3s;
-  max-width: 1400px;
+  max-width: 80%;
+  max-height: 70%;
 }
 @media screen and (max-width: 1300px) {
   #console .console-card-group {
@@ -3598,6 +3599,7 @@ span.tags-punctuation::before {
   border: none;
   overflow: hidden;
   border-radius: 0;
+  min-width: 575px;
 }
 #console .console-card.history .item-headline {
   display: none;
@@ -3651,6 +3653,7 @@ span.tags-punctuation::before {
 }
 #console #card-newest-comments {
   height: 100%;
+  min-height: 580px;
 }
 @media screen and (max-width: 1300px) {
   #console #consoleMusic {
@@ -6356,6 +6359,100 @@ span.tagsPageCount {
 }
 #body-wrap.error .aside-list .aside-list-item .content time {
   display: none;
+}
+div.console_recentcomments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-height: 100px;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.comment-card {
+  position: relative;
+  width: calc(100% / 3 - 8px);
+  background: var(--efu-card-bg);
+  border-radius: 12px;
+  border: var(--style-border-always);
+  padding: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.console-card .comment-card {
+  width: calc(100% / 2 - 8px);
+}
+@media screen and (max-width: 900px) {
+  .comment-card {
+    width: calc(100% / 2 - 6px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .comment-card {
+    width: 100%;
+  }
+}
+.comment-card:hover {
+  border-color: var(--style-border-hover-always);
+}
+.comment-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: var(--style-border-always);
+  padding-bottom: 8px;
+}
+.comment-info div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.comment-article,
+.comment-content {
+  transition: 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.7;
+  font-size: 14px;
+}
+.comment-title {
+  font-size: 12px;
+  color: var(--efu-secondtext);
+  margin-top: auto;
+  transition: 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1;
+  opacity: 0.6;
+  padding-top: 8px;
+}
+.comment-title i {
+  font-size: 12px;
+  line-height: 12px;
+}
+.console_recentcomments .comment-info img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 0;
+}
+span.comment-user {
+  font-weight: 700;
+}
+time.comment-time {
+  font-size: 12px;
+  color: var(--efu-secondtext);
+  margin-left: auto;
 }
 #bbTimeList {
   background: var(--efu-card-bg);
