@@ -2,6 +2,14 @@
     'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
     'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
     'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>let mdate = "7-7,9-18,12-13";
+mdate = (mdate.split(","));
+let ndate = new Date();
+for (let i of mdate) {
+    if (i === (ndate.getMonth()+1) + "-" + (ndate.getDate())) {
+        document.documentElement.classList.add('memorial');
+    }
+}
 </script><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"><link rel="stylesheet" href="/css/page.css"><script src="/js/toggleTheme.js"></script><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><script>(()=>{
         const saveToLocal = {
             set: function setWithExpiry(key, value, ttl) {
