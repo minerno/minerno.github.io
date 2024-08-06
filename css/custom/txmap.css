@@ -1,26 +1,12 @@
-#welcome-info {
-  overflow: hidden;
-  --icat-card-welcome: #49b1f5;
-}
-#welcome-info .welcome-time {
-  width: 100%;
-  margin: 12px 0 0;
-  display: inline-flex;
-}
-#welcome-info .welcome-message {
-  width: 100%;
-  margin-bottom: 8px;
-  display: inline-flex;
-}
-#welcome-info .welcome-region {
-  background: var(--icat-background);
-  border: var(--style-border);
-  color: var(--icat-fontcolor);
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 10px;
-  margin: 6px 0;
+/* 自定义变量的样式 */
+.custom-variable {
+    font-size: 1.2em; /* 字体大小稍大于正常文本 */
+    color: #87CEEB; /* 设置文本颜色为蓝色 */
+    font-weight: bold; /* 字体加粗 */
 }
 
-/* 欢迎信息栏样式 */
+/* 其他可能的样式 */
+#welcome-info {
+    /*text-align: left;*/
+    margin-top: 20px;
+}
