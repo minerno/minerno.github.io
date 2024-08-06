@@ -10282,37 +10282,6 @@ div#banners .bannerText {
     --style-border-hover: 0px solid var(--efu-main);
   }
 }
-#card-digit-clock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#clock {
-    font-size: 10px;
-    position: relative;
-}
-.digit-group {
-    display: inline-block;
-}
-.digit-group:not(:last-child):after {
-    color: inherit;
-    content: ":";
-    font-size: 50px;
-}
-.digit {
-    display: inline-block;
-    width: 33px;
-}
-.digit .digit-number {
-    color: inherit;
-    transform: rotate(-90deg);
-    transition: font-size 200ms,transform 350ms,color 150ms;
-}
-.digit .digit-number.bright {
-    color: inherit;
-    font-size: 25px;
-    transform: rotate(0deg);
-}
 /* 自定义变量的样式 */
 .custom-variable {
     font-size: 1.2em; /* 字体大小稍大于正常文本 */
