@@ -10282,6 +10282,57 @@ div#banners .bannerText {
     --style-border-hover: 0px solid var(--efu-main);
   }
 }
+#card-digit-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock {
+    font-size: 10px;
+    position: relative;
+}
+.digit-group {
+    display: inline-block;
+}
+.digit-group:not(:last-child):after {
+    color: inherit;
+    content: ":";
+    font-size: 50px;
+}
+.digit {
+    display: inline-block;
+    width: 33px;
+}
+.digit .digit-number {
+    color: inherit;
+    transform: rotate(-90deg);
+    transition: font-size 200ms,transform 350ms,color 150ms;
+}
+.digit .digit-number.bright {
+    color: inherit;
+    font-size: 25px;
+    transform: rotate(0deg);
+}
+:root {
+    --ichika-color: #49A6E9;
+}
+
+/* 公告&欢迎页 */
+.welcome-info {
+    line-height:30px;
+    font-size:16px;
+}
+
+.welcome-info .item-headline span{
+    margin-left:0!important;
+}
+
+.welcome-info span{
+    font-weight:bold;
+    font-size:20px!important;
+    color:var(--ichika-color);
+}
+
 figure.highlight .highlight-tools .st-copy-fill {
   right: 1.7rem;
 }
