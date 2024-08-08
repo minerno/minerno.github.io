@@ -10285,8 +10285,12 @@ div#banners .bannerText {
 /* 自定义变量的样式 */
 .custom-variable {
     font-size: 1.2em; /* 字体大小稍大于正常文本 */
-    color: #87CEEB; /* 设置文本颜色为蓝色 */
+
     font-weight: bold; /* 字体加粗 */
+}
+
+.normal-color {
+    color: var(--efu-fontcolor);
 }
 
 /* 其他可能的样式 */
