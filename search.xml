@@ -3,21 +3,717 @@
   <entry>
     <title>博客介绍</title>
     <url>/pages/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D.html</url>
-    <content><![CDATA[<p><code>欢迎来到 Minerno&#39;s Blog❤️</code></p>
+    <content><![CDATA[<p><code>欢迎来到 Minerno's Blog❤️</code></p>
 <hr>
 <blockquote>
 <p>本站用于分享博主<code>解决技术问题</code>的过程以及<code>记录生活</code>，期待与你相遇。</p>
 </blockquote>
-<h2 id="为什么建站？"><a href="#为什么建站？" class="headerlink" title="为什么建站？"></a>为什么建站？</h2><p>创建这个站的时候，想要就是能够有一个自己能够<code>积累知识</code>、<code>积累兴趣</code>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。</p>
-<h2 id="站点未来内容"><a href="#站点未来内容" class="headerlink" title="站点未来内容"></a>站点未来内容</h2><p>与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，<code>有技能的教程干货</code>、<code>有生活上的吐槽和妙招</code>、<code>有话题上的思考和想法</code>。一般我研究什么、发现了什么都会分享在这里。<br>这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。</p>
-<h2 id="友链"><a href="#友链" class="headerlink" title="友链"></a>友链</h2><p>这里也欢迎大家与我交换友链，互帮互助，共同进步。<br><a href="/links/">友链申请</a></p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这里有更多<a href="/about/">关于我</a>的介绍~</p>
+<h2 id="为什么建站？">为什么建站？</h2>
+<p>创建这个站的时候，想要就是能够有一个自己能够<code>积累知识</code>、<code>积累兴趣</code>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。</p>
+<h2 id="站点未来内容">站点未来内容</h2>
+<p>与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，<code>有技能的教程干货</code>、<code>有生活上的吐槽和妙招</code>、<code>有话题上的思考和想法</code>。一般我研究什么、发现了什么都会分享在这里。<br>
+这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。</p>
+<h2 id="友链">友链</h2>
+<p>这里也欢迎大家与我交换友链，互帮互助，共同进步。<br>
+<a href="/links/">友链申请</a></p>
+<h2 id="最后">最后</h2>
+<p>这里有更多<a href="/about/">关于我</a>的介绍~</p>
 ]]></content>
       <categories>
         <category>博客</category>
       </categories>
       <tags>
         <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tags Plugin</title>
+    <url>/pages/%E6%96%87%E6%A1%A3/Tags%20Plugin.html</url>
+    <content><![CDATA[<h2 id="btn按钮">btn按钮</h2>
+<div class="tabs" id="btn"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#btn-1">标签语法</button></li><li class="tab"><button type="button" data-href="#btn-2">配置参数</button></li><li class="tab"><button type="button" data-href="#btn-3">样式预览</button></li><li class="tab"><button type="button" data-href="#btn-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="btn-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn [url], [text], [icon], [color], [style], [layout], [position], [size] %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="btn-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">链接</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">按钮文字</td>
+</tr>
+<tr>
+<td style="text-align:left">icon</td>
+<td style="text-align:left">[可选] 图标</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">[可选] 按钮背景顔色（blue,pink,red,purple,orange,green）</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">[可选] 按钮样式 默认实心（留空,outline）</td>
+</tr>
+<tr>
+<td style="text-align:left">layout</td>
+<td style="text-align:left">[可选] 按钮布局 默认为line（留空,block）</td>
+</tr>
+<tr>
+<td style="text-align:left">position</td>
+<td style="text-align:left">[可选] 按钮位置 “前提是layout为block” 默认为左边 （留空/center/right）</td>
+</tr>
+<tr>
+<td style="text-align:left">size</td>
+<td style="text-align:left">[可选] 按钮大小 （留空/larger）</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="btn-3"><blockquote>
+<p>一组按钮</p>
+</blockquote>
+<p>按钮 <button class="btn-sco " onclick="window.open('https://google.com/')" 
+  title="G"><span>G</span></button><br>
+按钮 <button class="btn-sco " onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button><br>
+按钮 <button class="btn-sco " onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude outline"></i><span>G</span></button><br>
+按钮 <button class="btn-sco outline" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button><br>
+按钮 <button class="btn-sco larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button></p>
+<blockquote>
+<p>调整位置或大小</p>
+</blockquote>
+<p><button class="btn-sco block" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button><br>
+<button class="btn-sco block center larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button><br>
+<button class="btn-sco block right outline larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button></p>
+<blockquote>
+<p>颜色</p>
+</blockquote>
+<span>
+<button class="btn-sco larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco blue larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco pink larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco red larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco purple larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco orange larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco green larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+</span>
+<blockquote>
+<p>居中按钮</p>
+</blockquote>
+<div class="btn-center">
+<button class="btn-sco outline larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco outline blue larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco outline pink larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco outline red larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco outline purple larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco outline orange larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+<button class="btn-sco outline green larger" onclick="window.open('https://google.com/')" 
+  title="G"><i class="solitude st-lightbulb-line"></i><span>G</span></button>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="btn-4"><blockquote>
+<p>一组按钮</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">按钮 &#123;% btn &#x27;https://google.com/&#x27;,G %&#125;</span><br><span class="line">按钮 &#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line %&#125;</span><br><span class="line">按钮 &#123;% btn &#x27;https://google.com/&#x27;,G,outline %&#125;</span><br><span class="line">按钮 &#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline %&#125;</span><br><span class="line">按钮 &#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,larger %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>调整位置或大小</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,block %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,block center larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,block right outline larger %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>颜色</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span></span></span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,blue larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,pink larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,red larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,purple larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,orange larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,green larger %&#125;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>居中按钮</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;btn-center&quot;</span>&gt;</span></span></span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline blue larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline pink larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline red larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline purple larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline orange larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://google.com/&#x27;,G,st-lightbulb-line,outline green larger %&#125;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="图片插入">图片插入</h2>
+<h3 id="单张图片">单张图片</h3>
+<div class="tabs" id="image-solo"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#image-solo-1">标签语法</button></li><li class="tab"><button type="button" data-href="#image-solo-2">配置参数</button></li><li class="tab"><button type="button" data-href="#image-solo-3">样式预览</button></li><li class="tab"><button type="button" data-href="#image-solo-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="image-solo-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% image 链接, width=宽度（可选）, height=高度（可选）, alt=描述（可选）, bg=占位颜色（可选） %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-solo-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">链接</td>
+<td style="text-align:left">点击图片跳转</td>
+</tr>
+<tr>
+<td style="text-align:left">width</td>
+<td style="text-align:left">[可选]宽度 单位px</td>
+</tr>
+<tr>
+<td style="text-align:left">height</td>
+<td style="text-align:left">[可选]高度 单位px</td>
+</tr>
+<tr>
+<td style="text-align:left">alt</td>
+<td style="text-align:left">[可选]图片描述</td>
+</tr>
+<tr>
+<td style="text-align:left">bg</td>
+<td style="text-align:left">[可选]占位颜色 （使用颜色代码）</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-solo-3"><blockquote>
+<p>添加描述</p>
+</blockquote>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp" alt="日式小卖部"/></div><span class="image-caption">日式小卖部</span></div>
+<blockquote>
+<p>指定宽度</p>
+</blockquote>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp" style="width:400px;"/></div></div>
+<blockquote>
+<p>设置占位背景色</p>
+</blockquote>
+<div class="img-wrap"><div class="img-bg" style="background:#1D0C04"><img class="img" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp" alt="优化不同宽度浏览的观感" style="width:400px;"/></div><span class="image-caption">优化不同宽度浏览的观感</span></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-solo-4"><blockquote>
+<p>添加描述</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% image https://sources.minerno.com/img/wallhaven-ex136k<span class="emphasis">_2560x1440.webp, alt=日式小卖部%&#125;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>指定宽度</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% image https://sources.minerno.com/img/wallhaven-ex136k<span class="emphasis">_2560x1440.webp, width=400px %&#125;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>设置占位背景色</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% image https://sources.minerno.com/img/wallhaven-ex136k<span class="emphasis">_2560x1440.webp, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h3 id="行内图片">行内图片</h3>
+<div class="tabs" id="image-inline"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#image-inline-1">标签语法</button></li><li class="tab"><button type="button" data-href="#image-inline-2">配置参数</button></li><li class="tab"><button type="button" data-href="#image-inline-3">样式预览</button></li><li class="tab"><button type="button" data-href="#image-inline-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="image-inline-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% inlineimage 图片链接, height=高度（可选） %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-inline-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">链接</td>
+<td style="text-align:left">跳转链接</td>
+</tr>
+<tr>
+<td style="text-align:left">height</td>
+<td style="text-align:left">[可选]高度 单位px</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-inline-3"><p>这是 <img class="inline-img" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp" /> 一段话。</p>
+<p>这又是 <img class="inline-img" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp," style="height:height=100px"/> 一段话。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-inline-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是 &#123;% inlineimage https://sources.minerno.com/img/wallhaven-ex136k<span class="emphasis">_2560x1440.webp %&#125; 一段话。</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">这又是 &#123;% inlineimage https://sources.minerno.com/img/wallhaven-ex136k_</span>2560x1440.webp, height=100px %&#125; 一段话。</span><br><span class="line"></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h3 id="相册">相册</h3>
+<div class="tabs" id="gallery"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#gallery-1">标签语法</button></li><li class="tab"><button type="button" data-href="#gallery-2">配置参数</button></li><li class="tab"><button type="button" data-href="#gallery-3">样式预览</button></li><li class="tab"><button type="button" data-href="#gallery-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="gallery-1"><p>1.相册图库</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span></span><br><span class="line">&#123;% galleryGroup [name] [description] [link] [img] %&#125;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>2.相册</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">markdown 图片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="gallery-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">相册名</td>
+</tr>
+<tr>
+<td style="text-align:left">description</td>
+<td style="text-align:left">相册描述</td>
+</tr>
+<tr>
+<td style="text-align:left">link</td>
+<td style="text-align:left">相册跳转链接</td>
+</tr>
+<tr>
+<td style="text-align:left">img</td>
+<td style="text-align:left">相册封面</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="gallery-3"><blockquote>
+<p>相册图库</p>
+</blockquote>
+<div class="gallery-group-main">
+<figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://sources.minerno.com//img/background-black.webp' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name">壁纸</div>
+  <p>一些收藏的壁纸</p>
+  <a href='/album/%E5%A3%81%E7%BA%B8/'></a>
+  </figcaption>
+  </figure>
+</div>
+<blockquote>
+<p>相册</p>
+</blockquote>
+<div class="gallery-container waterfall">
+        <div class="gallery-item"><img class="nolazyload" src=https://sources.minerno.com//img/background-black.webp alt="" /></div><div class="gallery-item"><img class="nolazyload" src=https://sources.minerno.com//img/background-write.webp alt="" /></div><div class="gallery-item"><img class="nolazyload" src=https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp alt="" /></div>
+      </div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="gallery-4"><blockquote>
+<p>相册图库</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span></span><br><span class="line">&#123;% galleryGroup &#x27;壁纸&#x27; &#x27;一些收藏的壁纸&#x27; &#x27;/album/壁纸/&#x27; https://sources.minerno.com//img/background-black.webp %&#125;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>相册</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](<span class="link">https://sources.minerno.com//img/background-black.webp</span>)</span><br><span class="line">![](<span class="link">https://sources.minerno.com//img/background-write.webp</span>)</span><br><span class="line">![](<span class="link">https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp</span>)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="label-标签">label 标签</h2>
+<div class="tabs" id="label"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#label-1">标签语法</button></li><li class="tab"><button type="button" data-href="#label-2">配置参数</button></li><li class="tab"><button type="button" data-href="#label-3">样式预览</button></li><li class="tab"><button type="button" data-href="#label-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="label-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% label [text] [color] %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="label-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">文字</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">[可选]背景颜色 默认无色（留空/blue/pink/red/purple/orange/green）</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="label-3"><p>臣亮言：<label class="hl-label bg-default">先帝</label> 创业未半，而<label class="hl-label bg-blue">中道崩殂</label> 。今天下三分，<label class="hl-label bg-pink">益州疲敝</label> ，此诚<label class="hl-label bg-red">危急存亡之秋</label> 也！然侍衞之臣，不懈于内；<label class="hl-label bg-purple">忠志之士</label> ，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。<br>
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有<label class="hl-label bg-orange">作奸</label> 、<label class="hl-label bg-green">犯科</label> ，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="label-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">臣亮言：&#123;% label 先帝 %&#125;创业未半，而&#123;% label 中道崩殂 blue %&#125;。今天下三分，&#123;% label 益州疲敝 pink %&#125;，此诚&#123;% label 危急存亡之秋 red %&#125;也！然侍衞之臣，不懈于内；&#123;% label 忠志之士 purple %&#125;，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。</span><br><span class="line">宫中、府中，俱为一体；陟罚臧否，不宜异同。若有&#123;% label 作奸 orange %&#125;、&#123;% label 犯科 green %&#125;，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="audio-直链音频">audio 直链音频</h2>
+<div class="tabs" id="audio"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#audio-1">标签语法</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="audio-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% audio 音频链接 %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="video-直链视频">video 直链视频</h2>
+<div class="tabs" id="video"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#video-1">标签语法</button></li><li class="tab"><button type="button" data-href="#video-2">配置参数</button></li><li class="tab"><button type="button" data-href="#video-3">样式预览</button></li><li class="tab"><button type="button" data-href="#video-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="video-1"><p>1.单个视频（默认）</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% video 视频链接 %&#125;</span><br></pre></td></tr></table></figure>
+<p>2.多个视频组</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% videos,[column] %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endvideos%&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="video-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">column</td>
+<td style="text-align:left">列数 会自动给视频缩放（例：2列 视频缩放50%）</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="video-3"><blockquote>
+<p>默认</p>
+</blockquote>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<blockquote>
+<p>50% 宽度</p>
+</blockquote>
+<div class="videos" col='2'><div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div></div>
+<blockquote>
+<p>25 %</p>
+</blockquote>
+<div class="videos" col='4'><div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div>
+<div class="video"><video controls preload><source src='https://assets.btwoa.com/video/bueviocwmp.mp4' type='video/mp4'>Your browser does not support the video tag.</video></div></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="video-4"><blockquote>
+<p>默认</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>50% 宽度</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% videos, 2 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% endvideos %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>25 %</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% videos, 4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% video https://assets.btwoa.com/video/bueviocwmp.mp4 %&#125;</span><br><span class="line">&#123;% endvideos %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="段落文本">段落文本</h2>
+<div class="tabs" id="p-text"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#p-text-1">标签语法</button></li><li class="tab"><button type="button" data-href="#p-text-2">配置参数</button></li><li class="tab"><button type="button" data-href="#p-text-3">样式预览</button></li><li class="tab"><button type="button" data-href="#p-text-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="p-text-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% p [style], [text] %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="p-text-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">颜色：red,yellow,green,cyan,blue,gray <br/>大小：samll,h4,h3,h2,h1,large,huge,ultra<br/>对齐方向：left,center,right</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">文本</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="p-text-3"><p class='p red left'>红色-左对齐</p>
+<p class='p yellow center'>黄色-中心对齐</p>
+<p class='p green right'>绿色-右对齐</p>
+<p class='p center h1'>中心对齐-h1大小</p>
+<p class='p center ultra'>中心对齐-ultra大小</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="p-text-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% p red left, 红色-左对齐 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% p yellow center, 黄色-中心对齐 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% p green right, 绿色-右对齐 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% p center h1, 中心对齐-h1大小 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% p center ultra, 中心对齐-ultra大小 %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="Note-标签">Note 标签</h2>
+<div class="tabs" id="note"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#note-1">标签语法</button></li><li class="tab"><button type="button" data-href="#note-2">配置参数</button></li><li class="tab"><button type="button" data-href="#note-3">样式预览</button></li><li class="tab"><button type="button" data-href="#note-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="note-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [style] %&#125;</span><br><span class="line">[text]</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="note-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">主题：default,primary,success,info,warning,danger<br/>样式：simple,modern,flat,disabled</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">文本</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="note-3"><blockquote>
+<p>默认样式</p>
+</blockquote>
+<div class="note  default"><p>默认样式</p>
+</div>
+<blockquote>
+<p>Simple 样式</p>
+</blockquote>
+<div class="note  default simple"><p>default 主题</p>
+</div>
+<div class="note  primary simple"><p>primary 主题</p>
+</div>
+<div class="note  success simple"><p>success 主题</p>
+</div>
+<div class="note  info simple"><p>info 主题</p>
+</div>
+<div class="note  warning simple"><p>warning 主题</p>
+</div>
+<div class="note  danger simple"><p>danger 主题</p>
+</div>
+<blockquote>
+<p>Modern 样式</p>
+</blockquote>
+<div class="note  default modern"><p>default 主题</p>
+</div>
+<div class="note  primary modern"><p>primary 主题</p>
+</div>
+<div class="note  success modern"><p>success 主题</p>
+</div>
+<div class="note  info modern"><p>info 主题</p>
+</div>
+<div class="note  warning modern"><p>warning 主题</p>
+</div>
+<div class="note  danger modern"><p>danger 主题</p>
+</div>
+<blockquote>
+<p>Flat 样式</p>
+</blockquote>
+<div class="note  default flat"><p>default 主题</p>
+</div>
+<div class="note  primary flat"><p>primary 主题</p>
+</div>
+<div class="note  success flat"><p>success 主题</p>
+</div>
+<div class="note  info flat"><p>info 主题</p>
+</div>
+<div class="note  warning flat"><p>warning 主题</p>
+</div>
+<div class="note  danger flat"><p>danger 主题</p>
+</div>
+<blockquote>
+<p>Disabled 样式</p>
+</blockquote>
+<div class="note  default disabled"><p>default 主题</p>
+</div>
+<div class="note  primary disabled"><p>primary 主题</p>
+</div>
+<div class="note  success disabled"><p>success 主题</p>
+</div>
+<div class="note  info disabled"><p>info 主题</p>
+</div>
+<div class="note  warning disabled"><p>warning 主题</p>
+</div>
+<div class="note  danger disabled"><p>danger 主题</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="note-4"><blockquote>
+<p>默认样式</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">默认样式</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Simple 样式</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default simple %&#125;</span><br><span class="line">default 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary simple %&#125;</span><br><span class="line">primary 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success simple %&#125;</span><br><span class="line">success 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info simple %&#125;</span><br><span class="line">info 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning simple %&#125;</span><br><span class="line">warning 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger simple %&#125;</span><br><span class="line">danger 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Modern 样式</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default modern %&#125;</span><br><span class="line">default 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary modern %&#125;</span><br><span class="line">primary 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success modern %&#125;</span><br><span class="line">success 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info modern %&#125;</span><br><span class="line">info 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning modern %&#125;</span><br><span class="line">warning 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger modern %&#125;</span><br><span class="line">danger 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Flat 样式</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default flat %&#125;</span><br><span class="line">default 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary flat %&#125;</span><br><span class="line">primary 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success flat %&#125;</span><br><span class="line">success 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info flat %&#125;</span><br><span class="line">info 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning flat %&#125;</span><br><span class="line">warning 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger flat %&#125;</span><br><span class="line">danger 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Disabled 样式</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default disabled %&#125;</span><br><span class="line">default 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary disabled %&#125;</span><br><span class="line">primary 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success disabled %&#125;</span><br><span class="line">success 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info disabled %&#125;</span><br><span class="line">info 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning disabled %&#125;</span><br><span class="line">warning 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger disabled %&#125;</span><br><span class="line">danger 主题</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="tabs-分栏">tabs 分栏</h2>
+<div class="tabs" id="tabs"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tabs-1">标签语法</button></li><li class="tab"><button type="button" data-href="#tabs-2">配置参数</button></li><li class="tab"><button type="button" data-href="#tabs-3">样式预览</button></li><li class="tab"><button type="button" data-href="#tabs-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tabs-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% subtabs [id] %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab [name] --&gt;</span><br><span class="line">[text]</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="tabs-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">唯一标识（不能与其他冲突）</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">分栏标题</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">分栏内容文本</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="tabs-3"><div class="tabs" id="unique-id"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#unique-id-1">1</button></li><li class="tab"><button type="button" data-href="#unique-id-2">2</button></li><li class="tab"><button type="button" data-href="#unique-id-3">3</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="unique-id-1"><p>分栏1</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="unique-id-2"><p>分栏2</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="unique-id-3"><p>分栏3</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="tabs-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% subtabs  unique-id %&#125;</span><br><span class="line">&lt;!-- tab 1 --&gt;</span><br><span class="line">分栏1</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 2 --&gt;</span><br><span class="line">分栏2</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 3--&gt;</span><br><span class="line">分栏3</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endsubtabs %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="时间轴">时间轴</h2>
+<div class="tabs" id="唯一id"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#唯一id-1">标签语法</button></li><li class="tab"><button type="button" data-href="#唯一id-2">配置参数</button></li><li class="tab"><button type="button" data-href="#唯一id-3">样式预览</button></li><li class="tab"><button type="button" data-href="#唯一id-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="唯一id-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% timeline [title] %&#125;</span><br><span class="line">&#123;% timenode [time] %&#125;</span><br><span class="line"></span><br><span class="line">[text]</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="唯一id-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">节点名称</td>
+</tr>
+<tr>
+<td style="text-align:left">time</td>
+<td style="text-align:left">时间</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">文本内容</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="唯一id-3"><div class="timeline">
+<div class="timenode"><div class="meta"><p>1976.4</p></div><div class="body"><p>史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗纳德·韦恩创立了苹果公司</p></div></div>
+<div class="timenode"><div class="meta"><p>1996</p></div><div class="body"><p>苹果收购NeXT公司，乔布斯于隔年重返苹果公司</p></div></div>
+<div class="timenode"><div class="meta"><p>2007.1</p></div><div class="body"><p>苹果电脑公司正式推出其首款智能手机iPhone，并宣布更名为苹果公司</p></div></div>
+<div class="timenode"><div class="meta"><p>2020.6</p></div><div class="body"><p>库克宣布Mac将采用自研的ARM芯片</p></div></div>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="唯一id-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% timeline %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% timenode 1976.4 %&#125;</span><br><span class="line"></span><br><span class="line">史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗纳德·韦恩创立了苹果公司</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% timenode 1996 %&#125;</span><br><span class="line"> </span><br><span class="line">苹果收购NeXT公司，乔布斯于隔年重返苹果公司</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% timenode 2007.1 %&#125;</span><br><span class="line"> </span><br><span class="line">苹果电脑公司正式推出其首款智能手机iPhone，并宣布更名为苹果公司</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% timenode 2020.6 %&#125;</span><br><span class="line"> </span><br><span class="line">库克宣布Mac将采用自研的ARM芯片</span><br><span class="line"></span><br><span class="line">&#123;% endtimenode %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="link-外链块">link 外链块</h2>
+<div class="tabs" id="link-code"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#link-code-1">标签语法</button></li><li class="tab"><button type="button" data-href="#link-code-2">配置参数</button></li><li class="tab"><button type="button" data-href="#link-code-3">样式预览</button></li><li class="tab"><button type="button" data-href="#link-code-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="link-code-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% link [title],[subtitle],[link] %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="link-code-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">标题</td>
+</tr>
+<tr>
+<td style="text-align:left">subtitle</td>
+<td style="text-align:left">副标题 or 简介</td>
+</tr>
+<tr>
+<td style="text-align:left">link</td>
+<td style="text-align:left">链接</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="link-code-3"><a class="tag-link" target="_blank" href="https://bilibili.com/">
+    <div class="tag-link-tips">引用站外链接</div>
+    <div class="tag-link-bottom">
+        <div class="tag-link-left" style="background-image: url(https://api.iowen.cn/favicon/bilibili.com.png)">
+            <i class="solitude st-link-m-line" style="display: none"></i>
+        </div>
+        <div class="tag-link-right">
+            <div class="tag-link-title">BiliBili</div>
+            <div class="tag-link-sitename">哔哩哔哩</div>
+        </div>
+        <i class="solitude st-arrow-right-bold"></i>
+    </div>
+    </a>
+<a class="tag-link" target="_blank" href="https://www.minerno.com">
+    <div class="tag-link-tips">引用站外链接</div>
+    <div class="tag-link-bottom">
+        <div class="tag-link-left" style="background-image: url(https://api.iowen.cn/favicon/www.minerno.com.png)">
+            <i class="solitude st-link-m-line" style="display: none"></i>
+        </div>
+        <div class="tag-link-right">
+            <div class="tag-link-title">Minerno's Blog</div>
+            <div class="tag-link-sitename">朝来入庭树，孤客最先闻。</div>
+        </div>
+        <i class="solitude st-arrow-right-bold"></i>
+    </div>
+    </a><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="link-code-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% link BiliBili,哔哩哔哩,https://bilibili.com/ %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% link Minerno&#x27;s Blog,朝来入庭树，孤客最先闻。,https://www.minerno.com %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="fold-折叠快">fold 折叠快</h2>
+<div class="tabs" id="fold-code"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#fold-code-1">标签语法</button></li><li class="tab"><button type="button" data-href="#fold-code-2">配置参数</button></li><li class="tab"><button type="button" data-href="#fold-code-3">样式预览</button></li><li class="tab"><button type="button" data-href="#fold-code-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="fold-code-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% fold [title] [open] %&#125;</span><br><span class="line">[text]</span><br><span class="line">&#123;% endfold %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="fold-code-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">折叠块标题</td>
+</tr>
+<tr>
+<td style="text-align:left">open</td>
+<td style="text-align:left">[可选] 默认折叠 （留空/open）</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">内容文本</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="fold-code-3"><blockquote>
+<p>默认折叠</p>
+</blockquote>
+<details ><summary>折叠</summary><div class="content"><p>折叠</p>
+</div></details>
+<blockquote>
+<p>默认打开</p>
+</blockquote>
+<details open><summary>展开</summary><div class="content"><p>展开</p>
+</div></details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="fold-code-4"><blockquote>
+<p>默认折叠</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% fold 折叠 %&#125;</span><br><span class="line">折叠</span><br><span class="line">&#123;% endfold %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>默认打开</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% fold 展开 open %&#125;</span><br><span class="line">展开</span><br><span class="line">&#123;% endfold %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="bilibili-视频标签">bilibili 视频标签</h2>
+<div class="tabs" id="bvideo"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#bvideo-1">标签语法</button></li><li class="tab"><button type="button" data-href="#bvideo-2">配置参数</button></li><li class="tab"><button type="button" data-href="#bvideo-3">样式预览</button></li><li class="tab"><button type="button" data-href="#bvideo-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="bvideo-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% bvideo [url] %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="bvideo-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">输入BV号 （例：BV1oH4y1c7Kk）</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="bvideo-3"><iframe class="bvideo" width="100%" height="600" src="//player.bilibili.com/player.html?autoplay=0&bvid=BV1oH4y1c7Kk" border="0" frameBorder="no" framespacing="0" allowFullScreen="true"></iframe><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="bvideo-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% bvideo BV1oH4y1c7Kk %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="复选列表">复选列表</h2>
+<div class="tabs" id="check-box"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#check-box-1">标签语法</button></li><li class="tab"><button type="button" data-href="#check-box-2">配置参数</button></li><li class="tab"><button type="button" data-href="#check-box-3">样式预览</button></li><li class="tab"><button type="button" data-href="#check-box-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="check-box-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% checkbox [style], [text] %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="check-box-2"><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">样式：plus, minusl, times<br/>颜色：red, yellow, green, cyan, blue, gray <br/>选中状态：checked</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">文本</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="check-box-3"><div class='checkbox'><input type="checkbox" />
+            <p>纯文本测试</p>
+            </div>
+<div class='checkbox checked'><input type="checkbox" checked="checked"/>
+            <p>支持简单的 <a href="https://guides.github.com/features/mastering-markdown/">markdown</a> 语法</p>
+            </div>
+<div class='checkbox red'><input type="checkbox" />
+            <p>支持自定义颜色</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>绿色 + 默认选中</p>
+            </div>
+<div class='checkbox yellow checked'><input type="checkbox" checked="checked"/>
+            <p>黄色 + 默认选中</p>
+            </div>
+<div class='checkbox cyan checked'><input type="checkbox" checked="checked"/>
+            <p>青色 + 默认选中</p>
+            </div>
+<div class='checkbox blue checked'><input type="checkbox" checked="checked"/>
+            <p>蓝色 + 默认选中</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加</p>
+            </div>
+<div class='checkbox minus yellow checked'><input type="checkbox" checked="checked"/>
+            <p>减少</p>
+            </div>
+<div class='checkbox times red checked'><input type="checkbox" checked="checked"/>
+            <p>叉</p>
+            </div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="check-box-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% checkbox 纯文本测试 %&#125;</span><br><span class="line">&#123;% checkbox checked, 支持简单的 [<span class="string">markdown</span>](<span class="link">https://guides.github.com/features/mastering-markdown/</span>) 语法 %&#125;</span><br><span class="line">&#123;% checkbox red, 支持自定义颜色 %&#125;</span><br><span class="line">&#123;% checkbox green checked, 绿色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox yellow checked, 黄色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox cyan checked, 青色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox blue checked, 蓝色 + 默认选中 %&#125;</span><br><span class="line">&#123;% checkbox plus green checked, 增加 %&#125;</span><br><span class="line">&#123;% checkbox minus yellow checked, 减少 %&#125;</span><br><span class="line">&#123;% checkbox times red checked, 叉 %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+<h2 id="Katex-数学公式">Katex 数学公式</h2>
+<div class="tabs" id="katex-box"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#katex-box-1">前置依赖配置</button></li><li class="tab"><button type="button" data-href="#katex-box-2">标签语法</button></li><li class="tab"><button type="button" data-href="#katex-box-3">样式预览</button></li><li class="tab"><button type="button" data-href="#katex-box-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="katex-box-1"><ol>
+<li>markdown-it 渲染器 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line">npm un hexo-renderer-kramed --save</span><br><span class="line">npm i hexo-renderer-markdown-it --save</span><br><span class="line">npm install katex @renbaoshuo/markdown-it-katex</span><br></pre></td></tr></table></figure>
+</li>
+<li>在<code>[BlogRoot]/_config.yml</code>中添加以下配置 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># markdown-it</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line">    <span class="attr">preset:</span> <span class="string">&#x27;default&#x27;</span></span><br><span class="line">    <span class="attr">render:</span></span><br><span class="line">        <span class="attr">html:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">xhtmlOut:</span> <span class="literal">false</span></span><br><span class="line">        <span class="attr">langPrefix:</span> <span class="string">&#x27;language-&#x27;</span></span><br><span class="line">        <span class="attr">breaks:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">linkify:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">typographer:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">quotes:</span> <span class="string">&#x27;“”‘’&#x27;</span></span><br><span class="line">    <span class="attr">enable_rules:</span></span><br><span class="line">    <span class="attr">disable_rules:</span></span><br><span class="line">    <span class="attr">plugins:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">&#x27;@renbaoshuo/markdown-it-katex&#x27;</span></span><br><span class="line">    <span class="attr">anchors:</span></span><br><span class="line">        <span class="attr">level:</span> <span class="number">2</span></span><br><span class="line">        <span class="attr">collisionSuffix:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">        <span class="attr">permalink:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">permalinkClass:</span> <span class="string">&#x27;headerlink&#x27;</span></span><br><span class="line">        <span class="attr">permalinkSide:</span> <span class="string">&#x27;left&#x27;</span></span><br><span class="line">        <span class="attr">permalinkSymbol:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">        <span class="attr">case:</span> <span class="number">0</span></span><br><span class="line">        <span class="attr">separator:</span> <span class="string">&#x27;-&#x27;</span></span><br><span class="line">    <span class="attr">images:</span></span><br><span class="line">        <span class="attr">lazyload:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">prepend_root:</span> <span class="literal">false</span></span><br><span class="line">        <span class="attr">post_asset:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">inline:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="katex-box-2"><ol>
+<li>若在整文中使用 Katex，只需在文章头部<code>Front Matter</code>添加 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="section">katex: true</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>若在某一处使用 katex，可以使用以下语法
+<ul>
+<li>单行显示  <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">[公式]</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+</li>
+<li>行内显示<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$</span><br><span class="line">[公式]</span><br><span class="line">$</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="katex-box-3"><blockquote>
+<p>单行显示</p>
+</blockquote>
+<p>$$<br>
+f(t)=\int_{-\infty}^\infty f(t) e^{-iwt}dt<br>
+$$</p>
+<blockquote>
+<p>行内显示</p>
+</blockquote>
+<p>这是一个公式 $<br>
+\Bigg ( \bigg [ \Big { \big \langle \left | | \frac{a}{b} | \right | \big \rangle \Big } \bigg ] \Bigg )<br>
+$</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="katex-box-4"><blockquote>
+<p>单行显示</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">f(t)=\int<span class="emphasis">_&#123;-\infty&#125;^\infty f(t) e^&#123;-iwt&#125;dt</span></span><br><span class="line"><span class="emphasis">$$</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>行内显示</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个公式 $</span><br><span class="line">\Bigg ( \bigg [ \Big \&#123; \big \langle \left | \| \frac&#123;a&#125;&#123;b&#125; \| \right | \big \rangle \Big \&#125; \bigg ] \Bigg )</span><br><span class="line">$</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>]]></content>
+      <categories>
+        <category>文档</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
       </tags>
   </entry>
 </search>
