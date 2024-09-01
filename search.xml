@@ -1,179 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo部署至阿里云轻量服务器</title>
-    <url>/pages/%E5%8D%9A%E5%AE%A2/hexo%E9%83%A8%E7%BD%B2%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8.html</url>
-    <content><![CDATA[<h2 id="前提要求"><a class="headerlink" href="#前提要求"></a>前提要求</h2>
-<ul>
-<li>已在本地部署、安装和使用Hexo博客</li>
-</ul>
-<h2 id="服务器部署"><a class="headerlink" href="#服务器部署"></a>服务器部署</h2>
-<ul>
-<li>面板： 宝塔 7.5.1</li>
-</ul>
-<h3 id="连接服务器"><a class="headerlink" href="#连接服务器"></a>连接服务器</h3>
-<p>点击<code>远程连接</code>后，输入命令，切换至<code>root</code>账户</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure>
-<h3 id="git配置"><a class="headerlink" href="#git配置"></a>git配置</h3>
-<ol>
-<li>
-<p>服务器安装git</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure>
-<p>中途会出现<code>Is this ok [y/d/N]:</code>,输入<code>y</code>即可</p>
-</li>
-<li>
-<p>创建git账户</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">adduser git</span><br></pre></td></tr></table></figure>
-<p>设置git账户密码</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo passwd git</span><br></pre></td></tr></table></figure>
-<p><code>注意：linux下输入密码不显示任何字符</code></p>
-</li>
-<li>
-<p>git账户添加权限</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 740 /etc/sudoers</span><br><span class="line">vim /etc/sudoers</span><br></pre></td></tr></table></figure>
-<p>进入编辑页面，按<code>i</code>进入编辑页面，找到以下内容，添加内容</p>
- <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">## Allow root to run any commands anywhere</span><br><span class="line">root    ALL=(ALL)     ALL</span><br><span class="line">git     ALL=(ALL)     ALL  (添加这行)</span><br></pre></td></tr></table></figure>
-<p>然后按<code>Esc</code>，输入<code>:wq</code>保存退出</p>
-</li>
-<li>
-<p>改回权限</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 400 /etc/sudoers</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>切换git用户</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">su git</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>创建ssh文件夹和key文件且赋予权限</p>
-</li>
-</ol>
-<ul>
-<li>
-<p>创建</p>
-  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir ~/.ssh</span><br><span class="line">vim ~/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
-<ul>
-<li>
-<p>按<code>i</code>进入编辑模式，将在本地生成的<code>id_rsa.pub</code>文件中的公钥复制粘贴,然后按<code>Esc</code>输入<code>:wq</code>保存退出</p>
-</li>
-<li>
-<p><code>id_rsa.pub</code>文件一般生成在<code>C:/用户/用户名/.ssh/</code></p>
-</li>
-</ul>
-</li>
-<li>
-<p>赋权</p>
-  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 600 /home/git/.ssh/authorized_keys</span><br><span class="line">chmod 700 /home/git/.ssh</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>测试</p>
-<p>在本地git终端中输入以下命令，</p>
-  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh -v git@server_ip</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>server_ip</code>为服务器的ip</li>
-<li>成功连接会出现<code>Welcome to Alibaba Cloud Elastic Compute Service !</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="创建仓库目录和配置"><a class="headerlink" href="#创建仓库目录和配置"></a>创建仓库目录和配置</h2>
-<ul>
-<li>需要先切换至root账户  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ol>
-<li>创建仓库 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir /var/repo</span><br></pre></td></tr></table></figure>
-赋权 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown -R git:git /var/repo</span><br><span class="line">chmod -R 755 /var/repo</span><br></pre></td></tr></table></figure>
-</li>
-<li>创建网站根目录 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir /var/hexo</span><br></pre></td></tr></table></figure>
-赋权 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown -R git:git /var/hexo</span><br><span class="line">chmod -R 755 /var/hexo</span><br></pre></td></tr></table></figure>
-</li>
-<li>创建一个空白的git仓库 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /var/repo</span><br><span class="line">git init --bare hexo.git</span><br></pre></td></tr></table></figure>
-</li>
-<li>创建一个新的git钩子，用于自动部署 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /var/repo/hexo.git/hooks/post-receive </span><br></pre></td></tr></table></figure>
-进入编辑模式，将以下代码复制粘贴并保存退出 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/bash</span></span><br><span class="line">git --work-tree=/var/hexo --git-dir=/var/repo/hexo.git checkout -f</span><br></pre></td></tr></table></figure>
-修改权限 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown -R git:git /var/repo/hexo.git/hooks/post-receive</span><br><span class="line">chmod +x /var/repo/hexo.git/hooks/post-receive</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>git仓库已经搭建完成了</p>
-<h2 id="宝塔面板"><a class="headerlink" href="#宝塔面板"></a>宝塔面板</h2>
-<ol>
-<li>
-<p>查询宝塔面板地址</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bt default</span><br></pre></td></tr></table></figure>
-<ul>
-<li>宝塔面板端口号默认 <code>8888</code></li>
-<li>如果输入url进不去面板的情况，需要前往阿里云服务器防火墙添加规则<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">应用类型:     自定义</span><br><span class="line">协议:         TCP</span><br><span class="line">端口范围:     8888</span><br><span class="line">来源IP:      0.0.0.0/0 </span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li>
-<p>Nginx</p>
-<p>进入宝塔面板，左侧进入软件商店，下载Nginx。</p>
-</li>
-<li>
-<p>添加站点</p>
-<p>部署完成后，点击网站，添加站点。</p>
- <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">域名: 服务器IP或者自己的域名</span><br><span class="line">根目录: /var/hexo</span><br></pre></td></tr></table></figure>
-<ul>
-<li>
-<p>如果显示<code>不能使用关键目录</code>作为网站根目录，可使用以下方法</p>
-<p>在左侧点击文件：找到 <code>根目录/www/server/panel/class/public.py</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = [<span class="string">&#x27;/www/.Recycle_bin/&#x27;</span>,<span class="string">&#x27;/www/backup/&#x27;</span>,<span class="string">&#x27;/www/php_session/&#x27;</span>,<span class="string">&#x27;/www/wwwlogs/&#x27;</span>,<span class="string">&#x27;/www/server/&#x27;</span>,<span class="string">&#x27;/etc/&#x27;</span>,<span class="string">&#x27;/usr/&#x27;</span>,<span class="string">&#x27;/boot/&#x27;</span>,<span class="string">&#x27;/proc/&#x27;</span>,<span class="string">&#x27;/sys/&#x27;</span>,<span class="string">&#x27;/tmp/&#x27;</span>,<span class="string">&#x27;/root/&#x27;</span>,<span class="string">&#x27;/lib/&#x27;</span>,<span class="string">&#x27;/bin/&#x27;</span>,<span class="string">&#x27;/sbin/&#x27;</span>,<span class="string">&#x27;/run/&#x27;</span>,<span class="string">&#x27;/lib64/&#x27;</span>,<span class="string">&#x27;/lib32/&#x27;</span>,<span class="string">&#x27;/srv/&#x27;</span>]</span><br></pre></td></tr></table></figure>
-<p>在该行代码中找到<code>/var</code>后删除<code>重启面板</code>即可</p>
-</li>
-</ul>
-</li>
-<li>
-<p>配置文件</p>
-<p>点击<code>配置文件</code></p>
- <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">server</span><br><span class="line">&#123;</span><br><span class="line">listen 80;</span><br><span class="line">server_name xxx; # 填写你自己的域名，没有的话填ip</span><br><span class="line">index index.php index.html index.htm default.php default.htm default.html;</span><br><span class="line">root /var/hexo;  # 这里root填写自己的网站根目录，修改为/var/hexo</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>重启宝塔服务</p>
-<p>回到服务器终端，重启宝塔服务</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">service bt restart</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="修改hexo配置"><a class="headerlink" href="#修改hexo配置"></a>修改hexo配置</h2>
-<p>编辑站点配置文件<code>[BlogRoot]/_config.yml</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@service_ip:/var/repo/hexo.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-<h2 id="提交网站"><a class="headerlink" href="#提交网站"></a>提交网站</h2>
-<p>本地提交hexo</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客介绍</title>
-    <url>/pages/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D.html</url>
-    <content><![CDATA[<p><code>欢迎来到 Minerno's Blog❤️</code></p>
-<hr>
-<blockquote>
-<p>本站用于分享博主<code>解决技术问题</code>的过程以及<code>记录生活</code>，期待与你相遇。</p>
-</blockquote>
-<h2 id="为什么建站？"><a class="headerlink" href="#为什么建站？"></a>为什么建站？</h2>
-<p>创建这个站的时候，想要就是能够有一个自己能够<code>积累知识</code>、<code>积累兴趣</code>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。</p>
-<h2 id="站点未来内容"><a class="headerlink" href="#站点未来内容"></a>站点未来内容</h2>
-<p>与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，<code>有技能的教程干货</code>、<code>有生活上的吐槽和妙招</code>、<code>有话题上的思考和想法</code>。一般我研究什么、发现了什么都会分享在这里。<br>
-这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。</p>
-<h2 id="友链"><a class="headerlink" href="#友链"></a>友链</h2>
-<p>这里也欢迎大家与我交换友链，互帮互助，共同进步。<br>
-<a href="/links/">友链申请</a></p>
-<h2 id="最后"><a class="headerlink" href="#最后"></a>最后</h2>
-<p>这里有更多<a href="/about/">关于我</a>的介绍~</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>外挂标签 Tags Plugin</title>
     <url>/pages/%E6%96%87%E6%A1%A3/Tags%20Plugin.html</url>
     <content><![CDATA[<h2 id="btn按钮"><a class="headerlink" href="#btn按钮"></a>btn按钮</h2>
@@ -864,6 +691,179 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v0 v585 h43z"/></svg></span></span></
       </categories>
       <tags>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo部署至阿里云轻量服务器</title>
+    <url>/pages/%E5%8D%9A%E5%AE%A2/hexo%E9%83%A8%E7%BD%B2%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8.html</url>
+    <content><![CDATA[<h2 id="前提要求"><a class="headerlink" href="#前提要求"></a>前提要求</h2>
+<ul>
+<li>已在本地部署、安装和使用Hexo博客</li>
+</ul>
+<h2 id="服务器部署"><a class="headerlink" href="#服务器部署"></a>服务器部署</h2>
+<ul>
+<li>面板： 宝塔 7.5.1</li>
+</ul>
+<h3 id="连接服务器"><a class="headerlink" href="#连接服务器"></a>连接服务器</h3>
+<p>点击<code>远程连接</code>后，输入命令，切换至<code>root</code>账户</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure>
+<h3 id="git配置"><a class="headerlink" href="#git配置"></a>git配置</h3>
+<ol>
+<li>
+<p>服务器安装git</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure>
+<p>中途会出现<code>Is this ok [y/d/N]:</code>,输入<code>y</code>即可</p>
+</li>
+<li>
+<p>创建git账户</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">adduser git</span><br></pre></td></tr></table></figure>
+<p>设置git账户密码</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo passwd git</span><br></pre></td></tr></table></figure>
+<p><code>注意：linux下输入密码不显示任何字符</code></p>
+</li>
+<li>
+<p>git账户添加权限</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 740 /etc/sudoers</span><br><span class="line">vim /etc/sudoers</span><br></pre></td></tr></table></figure>
+<p>进入编辑页面，按<code>i</code>进入编辑页面，找到以下内容，添加内容</p>
+ <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">## Allow root to run any commands anywhere</span><br><span class="line">root    ALL=(ALL)     ALL</span><br><span class="line">git     ALL=(ALL)     ALL  (添加这行)</span><br></pre></td></tr></table></figure>
+<p>然后按<code>Esc</code>，输入<code>:wq</code>保存退出</p>
+</li>
+<li>
+<p>改回权限</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 400 /etc/sudoers</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>切换git用户</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">su git</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>创建ssh文件夹和key文件且赋予权限</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>创建</p>
+  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir ~/.ssh</span><br><span class="line">vim ~/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>按<code>i</code>进入编辑模式，将在本地生成的<code>id_rsa.pub</code>文件中的公钥复制粘贴,然后按<code>Esc</code>输入<code>:wq</code>保存退出</p>
+</li>
+<li>
+<p><code>id_rsa.pub</code>文件一般生成在<code>C:/用户/用户名/.ssh/</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>赋权</p>
+  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 600 /home/git/.ssh/authorized_keys</span><br><span class="line">chmod 700 /home/git/.ssh</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>测试</p>
+<p>在本地git终端中输入以下命令，</p>
+  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh -v git@server_ip</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>server_ip</code>为服务器的ip</li>
+<li>成功连接会出现<code>Welcome to Alibaba Cloud Elastic Compute Service !</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="创建仓库目录和配置"><a class="headerlink" href="#创建仓库目录和配置"></a>创建仓库目录和配置</h2>
+<ul>
+<li>需要先切换至root账户  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol>
+<li>创建仓库 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir /var/repo</span><br></pre></td></tr></table></figure>
+赋权 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown -R git:git /var/repo</span><br><span class="line">chmod -R 755 /var/repo</span><br></pre></td></tr></table></figure>
+</li>
+<li>创建网站根目录 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir /var/hexo</span><br></pre></td></tr></table></figure>
+赋权 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown -R git:git /var/hexo</span><br><span class="line">chmod -R 755 /var/hexo</span><br></pre></td></tr></table></figure>
+</li>
+<li>创建一个空白的git仓库 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /var/repo</span><br><span class="line">git init --bare hexo.git</span><br></pre></td></tr></table></figure>
+</li>
+<li>创建一个新的git钩子，用于自动部署 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /var/repo/hexo.git/hooks/post-receive </span><br></pre></td></tr></table></figure>
+进入编辑模式，将以下代码复制粘贴并保存退出 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/bash</span></span><br><span class="line">git --work-tree=/var/hexo --git-dir=/var/repo/hexo.git checkout -f</span><br></pre></td></tr></table></figure>
+修改权限 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown -R git:git /var/repo/hexo.git/hooks/post-receive</span><br><span class="line">chmod +x /var/repo/hexo.git/hooks/post-receive</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>git仓库已经搭建完成了</p>
+<h2 id="宝塔面板"><a class="headerlink" href="#宝塔面板"></a>宝塔面板</h2>
+<ol>
+<li>
+<p>查询宝塔面板地址</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bt default</span><br></pre></td></tr></table></figure>
+<ul>
+<li>宝塔面板端口号默认 <code>8888</code></li>
+<li>如果输入url进不去面板的情况，需要前往阿里云服务器防火墙添加规则<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">应用类型:     自定义</span><br><span class="line">协议:         TCP</span><br><span class="line">端口范围:     8888</span><br><span class="line">来源IP:      0.0.0.0/0 </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>Nginx</p>
+<p>进入宝塔面板，左侧进入软件商店，下载Nginx。</p>
+</li>
+<li>
+<p>添加站点</p>
+<p>部署完成后，点击网站，添加站点。</p>
+ <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">域名: 服务器IP或者自己的域名</span><br><span class="line">根目录: /var/hexo</span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>如果显示<code>不能使用关键目录</code>作为网站根目录，可使用以下方法</p>
+<p>在左侧点击文件：找到 <code>根目录/www/server/panel/class/public.py</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = [<span class="string">&#x27;/www/.Recycle_bin/&#x27;</span>,<span class="string">&#x27;/www/backup/&#x27;</span>,<span class="string">&#x27;/www/php_session/&#x27;</span>,<span class="string">&#x27;/www/wwwlogs/&#x27;</span>,<span class="string">&#x27;/www/server/&#x27;</span>,<span class="string">&#x27;/etc/&#x27;</span>,<span class="string">&#x27;/usr/&#x27;</span>,<span class="string">&#x27;/boot/&#x27;</span>,<span class="string">&#x27;/proc/&#x27;</span>,<span class="string">&#x27;/sys/&#x27;</span>,<span class="string">&#x27;/tmp/&#x27;</span>,<span class="string">&#x27;/root/&#x27;</span>,<span class="string">&#x27;/lib/&#x27;</span>,<span class="string">&#x27;/bin/&#x27;</span>,<span class="string">&#x27;/sbin/&#x27;</span>,<span class="string">&#x27;/run/&#x27;</span>,<span class="string">&#x27;/lib64/&#x27;</span>,<span class="string">&#x27;/lib32/&#x27;</span>,<span class="string">&#x27;/srv/&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>在该行代码中找到<code>/var</code>后删除<code>重启面板</code>即可</p>
+</li>
+</ul>
+</li>
+<li>
+<p>配置文件</p>
+<p>点击<code>配置文件</code></p>
+ <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">server</span><br><span class="line">&#123;</span><br><span class="line">listen 80;</span><br><span class="line">server_name xxx; # 填写你自己的域名，没有的话填ip</span><br><span class="line">index index.php index.html index.htm default.php default.htm default.html;</span><br><span class="line">root /var/hexo;  # 这里root填写自己的网站根目录，修改为/var/hexo</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>重启宝塔服务</p>
+<p>回到服务器终端，重启宝塔服务</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">service bt restart</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="修改hexo配置"><a class="headerlink" href="#修改hexo配置"></a>修改hexo配置</h2>
+<p>编辑站点配置文件<code>[BlogRoot]/_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@service_ip:/var/repo/hexo.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<h2 id="提交网站"><a class="headerlink" href="#提交网站"></a>提交网站</h2>
+<p>本地提交hexo</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客介绍</title>
+    <url>/pages/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D.html</url>
+    <content><![CDATA[<p><code>欢迎来到 Minerno's Blog❤️</code></p>
+<hr>
+<blockquote>
+<p>本站用于分享博主<code>解决技术问题</code>的过程以及<code>记录生活</code>，期待与你相遇。</p>
+</blockquote>
+<h2 id="为什么建站？"><a class="headerlink" href="#为什么建站？"></a>为什么建站？</h2>
+<p>创建这个站的时候，想要就是能够有一个自己能够<code>积累知识</code>、<code>积累兴趣</code>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。</p>
+<h2 id="站点未来内容"><a class="headerlink" href="#站点未来内容"></a>站点未来内容</h2>
+<p>与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，<code>有技能的教程干货</code>、<code>有生活上的吐槽和妙招</code>、<code>有话题上的思考和想法</code>。一般我研究什么、发现了什么都会分享在这里。<br>
+这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。</p>
+<h2 id="友链"><a class="headerlink" href="#友链"></a>友链</h2>
+<p>这里也欢迎大家与我交换友链，互帮互助，共同进步。<br>
+<a href="/links/">友链申请</a></p>
+<h2 id="最后"><a class="headerlink" href="#最后"></a>最后</h2>
+<p>这里有更多<a href="/about/">关于我</a>的介绍~</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
       </tags>
   </entry>
 </search>
