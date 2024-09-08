@@ -192,8 +192,8 @@
 <td style="text-align:left">[可选]高度 单位px</td>
 </tr>
 </tbody>
-</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-inline-3"><p>这是 <img no-lazy class="inline" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp" style="height:1.5em"/> 一段话。</p>
-<p>这又是 <img no-lazy class="inline" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp" style="height:100px;"/> 一段话。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-inline-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是 &#123;% inlineimage https://sources.minerno.com/img/wallhaven-ex136k<span class="emphasis">_2560x1440.webp %&#125; 一段话。</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">这又是 &#123;% inlineimage https://sources.minerno.com/img/wallhaven-ex136k_</span>2560x1440.webp, height=100px %&#125; 一段话。</span><br><span class="line"></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-inline-3"><p>这是 <img class="inline-img" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp" /> 一段话。</p>
+<p>这又是 <img class="inline-img" src="https://sources.minerno.com/img/wallhaven-ex136k_2560x1440.webp," style="height:height=100px"/> 一段话。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="image-inline-4"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是 &#123;% inlineimage https://sources.minerno.com/img/wallhaven-ex136k<span class="emphasis">_2560x1440.webp %&#125; 一段话。</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">这又是 &#123;% inlineimage https://sources.minerno.com/img/wallhaven-ex136k_</span>2560x1440.webp, height=100px %&#125; 一段话。</span><br><span class="line"></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div></div></div>
 <h3 id="相册"><a class="headerlink" href="#相册"></a>相册</h3>
 <div class="tabs" id="gallery"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#gallery-1">标签语法</button></li><li class="tab"><button type="button" data-href="#gallery-2">配置参数</button></li><li class="tab"><button type="button" data-href="#gallery-3">样式预览</button></li><li class="tab"><button type="button" data-href="#gallery-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="gallery-1"><p>1.相册图库</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span></span><br><span class="line">&#123;% galleryGroup [name] [description] [link] [img] %&#125;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
@@ -694,6 +694,32 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v0 v585 h43z"/></svg></span></span></
       </tags>
   </entry>
   <entry>
+    <title>博客介绍</title>
+    <url>/pages/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D.html</url>
+    <content><![CDATA[<p><code>欢迎来到 Minerno's Blog❤️</code></p>
+<hr>
+<blockquote>
+<p>本站用于分享博主<code>解决技术问题</code>的过程以及<code>记录生活</code>，期待与你相遇。</p>
+</blockquote>
+<h2 id="为什么建站？"><a class="headerlink" href="#为什么建站？"></a>为什么建站？</h2>
+<p>创建这个站的时候，想要就是能够有一个自己能够<code>积累知识</code>、<code>积累兴趣</code>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。</p>
+<h2 id="站点未来内容"><a class="headerlink" href="#站点未来内容"></a>站点未来内容</h2>
+<p>与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，<code>有技能的教程干货</code>、<code>有生活上的吐槽和妙招</code>、<code>有话题上的思考和想法</code>。一般我研究什么、发现了什么都会分享在这里。<br>
+这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。</p>
+<h2 id="友链"><a class="headerlink" href="#友链"></a>友链</h2>
+<p>这里也欢迎大家与我交换友链，互帮互助，共同进步。<br>
+<a href="/links/">友链申请</a></p>
+<h2 id="最后"><a class="headerlink" href="#最后"></a>最后</h2>
+<p>这里有更多<a href="/about/">关于我</a>的介绍~</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo部署至阿里云轻量服务器</title>
     <url>/pages/%E5%8D%9A%E5%AE%A2/hexo%E9%83%A8%E7%BD%B2%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8.html</url>
     <content><![CDATA[<h2 id="前提要求"><a class="headerlink" href="#前提要求"></a>前提要求</h2>
@@ -838,32 +864,6 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v0 v585 h43z"/></svg></span></span></
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客介绍</title>
-    <url>/pages/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D.html</url>
-    <content><![CDATA[<p><code>欢迎来到 Minerno's Blog❤️</code></p>
-<hr>
-<blockquote>
-<p>本站用于分享博主<code>解决技术问题</code>的过程以及<code>记录生活</code>，期待与你相遇。</p>
-</blockquote>
-<h2 id="为什么建站？"><a class="headerlink" href="#为什么建站？"></a>为什么建站？</h2>
-<p>创建这个站的时候，想要就是能够有一个自己能够<code>积累知识</code>、<code>积累兴趣</code>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。</p>
-<h2 id="站点未来内容"><a class="headerlink" href="#站点未来内容"></a>站点未来内容</h2>
-<p>与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，<code>有技能的教程干货</code>、<code>有生活上的吐槽和妙招</code>、<code>有话题上的思考和想法</code>。一般我研究什么、发现了什么都会分享在这里。<br>
-这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。</p>
-<h2 id="友链"><a class="headerlink" href="#友链"></a>友链</h2>
-<p>这里也欢迎大家与我交换友链，互帮互助，共同进步。<br>
-<a href="/links/">友链申请</a></p>
-<h2 id="最后"><a class="headerlink" href="#最后"></a>最后</h2>
-<p>这里有更多<a href="/about/">关于我</a>的介绍~</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
       </tags>
   </entry>
 </search>
