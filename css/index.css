@@ -2192,7 +2192,7 @@ span.tags-punctuation::before {
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   margin: 0 4px;
-  background: var(--efu-pink);
+  background: var(--efu-main);
   line-height: 2;
   box-shadow: var(--efu-shadow-border);
 }
