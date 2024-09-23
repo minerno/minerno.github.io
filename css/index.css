@@ -6516,6 +6516,10 @@ i.bber-gotobb {
   margin-top: 0.5rem;
   width: 100%;
 }
+#bber .bber-loading {
+  position: revert !important;
+  margin: 0 auto;
+}
 #bber div.bber-content {
   display: flex;
   flex-direction: initial;
@@ -6523,6 +6527,9 @@ i.bber-gotobb {
   border-radius: 12px;
   width: 100%;
   height: 100%;
+}
+#bber > section > ul > li.item {
+  margin-bottom: 1rem;
 }
 #bber .bber-bottom {
   display: flex;
@@ -6534,12 +6541,18 @@ i.bber-gotobb {
   display: flex;
   align-items: center;
 }
+#bber .bber-info div {
+  margin-left: 0.5rem;
+}
+#bber .bber-info div:first-child {
+  margin-left: 0;
+}
 #bber .bber-info .fa-rectangles-mixed {
   margin-right: 8px;
 }
 #bber .bber-info .bber-info-time,
-#bber .bber-info .bber-info-location {
-  margin-right: 0.5rem;
+#bber .bber-info .bber-info-from,
+#bber .bber-info .bber-info-top {
   color: var(--efu-fontcolor);
   font-size: 0.7rem;
   background-color: var(--efu-gray-op);
@@ -6550,28 +6563,27 @@ i.bber-gotobb {
   align-items: center;
 }
 #bber .bber-info .bber-info-time i,
-#bber .bber-info .bber-info-location i {
+#bber .bber-info .bber-info-from i,
+#bber .bber-info .bber-info-top i {
   margin-right: 8px;
   font-size: 16px;
 }
-#bber .bber-info .bber-info-time .datafrom,
-#bber .bber-info .bber-info-location .datafrom {
+#bber .bber-info .bber-info-time .datafrom {
   order: 2;
   color: var(--efu-secondtext);
   font-size: 0.7rem;
   margin-left: 8px;
 }
-#bber .bber-info .bber-info-time .datafrom small,
-#bber .bber-info .bber-info-location .datafrom small {
+#bber .bber-info .bber-info-time .datafrom small {
   font-size: 0.7rem;
 }
 #bber .bber-info .bber-content-link {
   display: flex;
-  margin-right: 0.5rem;
-  color: var(--efu-secondtext);
+  margin-left: 0.5rem;
+  color: #67c23a;
   font-size: 0.7rem;
   align-items: center;
-  background-color: rgba(245,108,108,0.13);
+  background-color: rgba(103,194,58,0.13);
   padding: 0 8px;
   border-radius: 20px;
 }
@@ -6582,6 +6594,17 @@ i.bber-gotobb {
 #bber .bber-info .bber-content-link i {
   margin-right: 3px;
   font-size: 16px;
+}
+#bber .bber-info .bber-info-top {
+  background-color: rgba(245,108,108,0.13);
+  color: #f56c6c;
+}
+#bber .bber-info .bber-info-top i {
+  display: inline-flex;
+  transform: rotateZ(35deg);
+}
+#bber .bber-reply {
+  margin: 0 0 0 0.5rem;
 }
 #bber .count {
   color: var(--efu-secondtext);
