@@ -3,7 +3,20 @@
   <entry>
     <title>外挂标签 Tags Plugin</title>
     <url>/pages/%E6%96%87%E6%A1%A3/Tags%20Plugin.html</url>
-    <content><![CDATA[<h2 id="btn按钮"><a class="headerlink" href="#btn按钮"></a>btn按钮</h2>
+    <content><![CDATA[<a class="tag-link" target="_blank" href="https://blog.btwoa.com/a0685bc9/">
+    <div class="tag-link-tips">引用站外链接</div>
+    <div class="tag-link-bottom">
+        <div class="tag-link-left" style="background-image: url(https://api.iowen.cn/favicon/blog.btwoa.com.png)">
+            <i class="solitude st-link-m-line" style="display: none"></i>
+        </div>
+        <div class="tag-link-right">
+            <div class="tag-link-title">Solitude主题杂项配置指南</div>
+            <div class="tag-link-sitename">btwoa</div>
+        </div>
+        <i class="solitude st-arrow-right-bold"></i>
+    </div>
+    </a>
+<h2 id="btn按钮"><a class="headerlink" href="#btn按钮"></a>btn按钮</h2>
 <div class="tabs" id="btn"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#btn-1">标签语法</button></li><li class="tab"><button type="button" data-href="#btn-2">配置参数</button></li><li class="tab"><button type="button" data-href="#btn-3">样式预览</button></li><li class="tab"><button type="button" data-href="#btn-4">演示源码</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="btn-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn [url], [text], [icon], [color] [style] [layout] [position] [size] %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="solitude st-arrow-up-line"></i></button></div><div class="tab-item-content" id="btn-2"><table>
 <thead>
 <tr>
